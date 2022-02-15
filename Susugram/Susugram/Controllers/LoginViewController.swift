@@ -10,8 +10,6 @@ import UIKit
 class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginTextField: UITextField!
-    
-    var isLoggedIn: Bool = false
 
     @IBAction func touchUpInsideLoginButton(_ sender: Any) {
         guard let login = loginTextField.text,
@@ -23,11 +21,7 @@ class LoginViewController: UIViewController {
         print("Password is \(password)")
         
         if validLogin(username: login, password: password){
-            isLoggedIn = true
-            
-            let homeVC = HomeViewController()
-            homeVC.modalPresentationStyle = .fullScreen
-            present(homeVC, animated: true, completion: nil)
+            showMainScreen()
         }else{
             
             let alertController = UIAlertController(title: "Incorrect Login or Password", message: "Hey, that's the wrong information, silly!", preferredStyle: .alert)
@@ -44,6 +38,12 @@ class LoginViewController: UIViewController {
         // this part is used to mock a database and server that I don't have yet.
         // this is just an example for studies
         return password == "123456"
+    }
+    
+    func showMainScreen(){
+        let mainVC = MainTabViewController()
+        mainVC.modalPresentationStyle = .fullScreen
+        present(mainVC, animated: true, completion: nil)
     }
     
     @IBAction func touchUpInsideRegisterButton(_ sender: Any) {

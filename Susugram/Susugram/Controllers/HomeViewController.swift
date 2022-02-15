@@ -9,21 +9,11 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    @IBAction func touchUpInsideButton(_ sender: Any) {
+        let testVC = HomeViewController()
+        navigationController?.pushViewController(testVC, animated: true)
+        navigationItem.title = "Some Title"
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }
