@@ -9,13 +9,18 @@
 /* Begin PBXBuildFile section */
 		2585941227BBF1BC0097B70A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2585941127BBF1BC0097B70A /* AppDelegate.swift */; };
 		2585941427BBF1BC0097B70A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2585941327BBF1BC0097B70A /* SceneDelegate.swift */; };
-		2585941627BBF1BC0097B70A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2585941527BBF1BC0097B70A /* ViewController.swift */; };
+		2585941627BBF1BC0097B70A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2585941527BBF1BC0097B70A /* LoginViewController.swift */; };
 		2585941927BBF1BC0097B70A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2585941727BBF1BC0097B70A /* Main.storyboard */; };
 		2585941B27BBF1BD0097B70A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2585941A27BBF1BD0097B70A /* Assets.xcassets */; };
 		2585941E27BBF1BD0097B70A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2585941C27BBF1BD0097B70A /* LaunchScreen.storyboard */; };
 		2585942927BBF1BE0097B70A /* SusugramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2585942827BBF1BE0097B70A /* SusugramTests.swift */; };
 		2585943327BBF1BE0097B70A /* SusugramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2585943227BBF1BE0097B70A /* SusugramUITests.swift */; };
 		2585943527BBF1BE0097B70A /* SusugramUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2585943427BBF1BE0097B70A /* SusugramUITestsLaunchTests.swift */; };
+		2585944827BC29300097B70A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2585944627BC29300097B70A /* HomeViewController.swift */; };
+		2585944927BC29300097B70A /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2585944727BC29300097B70A /* HomeViewController.xib */; };
+		2585944C27BC2B360097B70A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2585944A27BC2B360097B70A /* RegisterViewController.swift */; };
+		2585944D27BC2B360097B70A /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2585944B27BC2B360097B70A /* RegisterViewController.xib */; };
+		2585944F27BC31DE0097B70A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2585944E27BC31DE0097B70A /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +44,7 @@
 		2585940E27BBF1BC0097B70A /* Susugram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Susugram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2585941127BBF1BC0097B70A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2585941327BBF1BC0097B70A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2585941527BBF1BC0097B70A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2585941527BBF1BC0097B70A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2585941827BBF1BC0097B70A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2585941A27BBF1BD0097B70A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2585941D27BBF1BD0097B70A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +54,11 @@
 		2585942E27BBF1BE0097B70A /* SusugramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SusugramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2585943227BBF1BE0097B70A /* SusugramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SusugramUITests.swift; sourceTree = "<group>"; };
 		2585943427BBF1BE0097B70A /* SusugramUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SusugramUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2585944627BC29300097B70A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2585944727BC29300097B70A /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		2585944A27BC2B360097B70A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		2585944B27BC2B360097B70A /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		2585944E27BC31DE0097B70A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +156,9 @@
 		2585944327BBF3610097B70A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2585941527BBF1BC0097B70A /* ViewController.swift */,
+				2585941527BBF1BC0097B70A /* LoginViewController.swift */,
+				2585944627BC29300097B70A /* HomeViewController.swift */,
+				2585944A27BC2B360097B70A /* RegisterViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -155,6 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				2585941727BBF1BC0097B70A /* Main.storyboard */,
+				2585944727BC29300097B70A /* HomeViewController.xib */,
+				2585944B27BC2B360097B70A /* RegisterViewController.xib */,
 				2585941C27BBF1BD0097B70A /* LaunchScreen.storyboard */,
 			);
 			path = Views;
@@ -163,6 +177,7 @@
 		2585944527BBF36D0097B70A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2585944E27BC31DE0097B70A /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -272,8 +287,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2585941E27BBF1BD0097B70A /* LaunchScreen.storyboard in Resources */,
+				2585944D27BC2B360097B70A /* RegisterViewController.xib in Resources */,
 				2585941B27BBF1BD0097B70A /* Assets.xcassets in Resources */,
 				2585941927BBF1BC0097B70A /* Main.storyboard in Resources */,
+				2585944927BC29300097B70A /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,9 +315,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2585941627BBF1BC0097B70A /* ViewController.swift in Sources */,
+				2585941627BBF1BC0097B70A /* LoginViewController.swift in Sources */,
+				2585944C27BC2B360097B70A /* RegisterViewController.swift in Sources */,
+				2585944F27BC31DE0097B70A /* User.swift in Sources */,
 				2585941227BBF1BC0097B70A /* AppDelegate.swift in Sources */,
 				2585941427BBF1BC0097B70A /* SceneDelegate.swift in Sources */,
+				2585944827BC29300097B70A /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

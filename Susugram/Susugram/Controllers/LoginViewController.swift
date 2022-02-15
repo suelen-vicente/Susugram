@@ -7,32 +7,32 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var loginTextField: UITextField!
     
     var isLoggedIn: Bool = false
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
 
     @IBAction func touchUpInsideLoginButton(_ sender: Any) {
         guard let login = loginTextField.text,
               let password = passwordTextField.text else {
                   return
               }
+        
         print("Username is \(login)")
         print("Password is \(password)")
         
         if validLogin(username: login, password: password){
             isLoggedIn = true
+            
+            let homeVC = HomeViewController()
+            homeVC.modalPresentationStyle = .fullScreen
+            present(homeVC, animated: true, completion: nil)
         }else{
             
             let alertController = UIAlertController(title: "Incorrect Login or Password", message: "Hey, that's the wrong information, silly!", preferredStyle: .alert)
  
-            let okAction = UIAlertAction(title: "Okay", style: .default, handler: nil)
-            
-            alertController.addAction(okAction)
+            alertController.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
             
             present(alertController, animated: true, completion: nil)
  
@@ -46,7 +46,19 @@ class ViewController: UIViewController {
         return password == "123456"
     }
     
-    @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var loginTextField: UITextField!
+    @IBAction func touchUpInsideRegisterButton(_ sender: Any) {
+        let registerVC = RegisterViewController()
+        registerVC.modalPresentationStyle = .fullScreen
+        registerVC.delegate = self
+        present(registerVC, animated: true, completion: nil)
+    }
+    
+    
+}
+
+extension LoginViewController: RegisterDelegate{
+    func didRegisterUser(user: User) {
+        print(user.email)
+    }
 }
 
