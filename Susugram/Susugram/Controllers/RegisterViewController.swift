@@ -13,8 +13,6 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var registerButton: UIButton!
     
-    var delegate: RegisterDelegate?
-    
     @IBAction func touchUpInsideRegisterButton(_ sender: Any) {
         guard let username = usernameTextField.text,
               let password = passwordTextField.text,
@@ -23,14 +21,11 @@ class RegisterViewController: UIViewController {
                   return
               }
         
+        //something will be done here!
         let newUser = User(email: username, password: password)
         
-        dismiss(animated: true, completion: {
-            self.delegate?.didRegisterUser(user: newUser)
-        })
+        let mainVC = MainViewController()
+        mainVC.modalPresentationStyle = .fullScreen
+        present(mainVC, animated: true, completion: nil)
     }
-}
-
-protocol RegisterDelegate{
-    func didRegisterUser(user: User)
 }

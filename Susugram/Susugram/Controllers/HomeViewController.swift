@@ -10,9 +10,8 @@ import UIKit
 class HomeViewController: UIViewController {
 
     @IBAction func touchUpInsideButton(_ sender: Any) {
-        let testVC = HomeViewController()
-        navigationController?.pushViewController(testVC, animated: true)
-        navigationItem.title = "Some Title"
+        navigationController?.pushViewController(HomeViewController(), animated: true)
+        
     }
     
 

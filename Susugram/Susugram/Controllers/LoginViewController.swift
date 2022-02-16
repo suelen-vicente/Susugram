@@ -17,20 +17,13 @@ class LoginViewController: UIViewController {
                   return
               }
         
-        print("Username is \(login)")
-        print("Password is \(password)")
-        
         if validLogin(username: login, password: password){
             showMainScreen()
         }else{
             
             let alertController = UIAlertController(title: "Incorrect Login or Password", message: "Hey, that's the wrong information, silly!", preferredStyle: .alert)
- 
             alertController.addAction(UIAlertAction(title: "Okay", style: .default, handler: nil))
-            
             present(alertController, animated: true, completion: nil)
- 
-            print("Invalid login!")
         }
     }
     
@@ -41,7 +34,7 @@ class LoginViewController: UIViewController {
     }
     
     func showMainScreen(){
-        let mainVC = MainTabViewController()
+        let mainVC = MainViewController()
         mainVC.modalPresentationStyle = .fullScreen
         present(mainVC, animated: true, completion: nil)
     }
@@ -49,16 +42,7 @@ class LoginViewController: UIViewController {
     @IBAction func touchUpInsideRegisterButton(_ sender: Any) {
         let registerVC = RegisterViewController()
         registerVC.modalPresentationStyle = .fullScreen
-        registerVC.delegate = self
         present(registerVC, animated: true, completion: nil)
-    }
-    
-    
-}
-
-extension LoginViewController: RegisterDelegate{
-    func didRegisterUser(user: User) {
-        print(user.email)
     }
 }
 

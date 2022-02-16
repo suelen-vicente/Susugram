@@ -21,8 +21,14 @@
 		2585944C27BC2B360097B70A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2585944A27BC2B360097B70A /* RegisterViewController.swift */; };
 		2585944D27BC2B360097B70A /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2585944B27BC2B360097B70A /* RegisterViewController.xib */; };
 		2585944F27BC31DE0097B70A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2585944E27BC31DE0097B70A /* User.swift */; };
-		2585945827BC54200097B70A /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2585945627BC54200097B70A /* MainTabViewController.swift */; };
-		2585945927BC54200097B70A /* MainTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2585945727BC54200097B70A /* MainTabViewController.xib */; };
+		2585945C27BD96C00097B70A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2585945A27BD96C00097B70A /* MainViewController.swift */; };
+		2585945D27BD96C00097B70A /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2585945B27BD96C00097B70A /* MainViewController.xib */; };
+		2585946427BD99C10097B70A /* LikesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2585946227BD99C10097B70A /* LikesViewController.swift */; };
+		2585946527BD99C10097B70A /* LikesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2585946327BD99C10097B70A /* LikesViewController.xib */; };
+		2585946827BD99DC0097B70A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2585946627BD99DC0097B70A /* SearchViewController.swift */; };
+		2585946927BD99DC0097B70A /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2585946727BD99DC0097B70A /* SearchViewController.xib */; };
+		2585946C27BD99F80097B70A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2585946A27BD99F80097B70A /* SettingsViewController.swift */; };
+		2585946D27BD99F80097B70A /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2585946B27BD99F80097B70A /* SettingsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +67,14 @@
 		2585944A27BC2B360097B70A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		2585944B27BC2B360097B70A /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		2585944E27BC31DE0097B70A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		2585945627BC54200097B70A /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
-		2585945727BC54200097B70A /* MainTabViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTabViewController.xib; sourceTree = "<group>"; };
+		2585945A27BD96C00097B70A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2585945B27BD96C00097B70A /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		2585946227BD99C10097B70A /* LikesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesViewController.swift; sourceTree = "<group>"; };
+		2585946327BD99C10097B70A /* LikesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LikesViewController.xib; sourceTree = "<group>"; };
+		2585946627BD99DC0097B70A /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		2585946727BD99DC0097B70A /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		2585946A27BD99F80097B70A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		2585946B27BD99F80097B70A /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +175,10 @@
 				2585941527BBF1BC0097B70A /* LoginViewController.swift */,
 				2585944627BC29300097B70A /* HomeViewController.swift */,
 				2585944A27BC2B360097B70A /* RegisterViewController.swift */,
-				2585945627BC54200097B70A /* MainTabViewController.swift */,
+				2585945A27BD96C00097B70A /* MainViewController.swift */,
+				2585946227BD99C10097B70A /* LikesViewController.swift */,
+				2585946627BD99DC0097B70A /* SearchViewController.swift */,
+				2585946A27BD99F80097B70A /* SettingsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -171,11 +186,14 @@
 		2585944427BBF3680097B70A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2585941727BBF1BC0097B70A /* Main.storyboard */,
 				2585941C27BBF1BD0097B70A /* LaunchScreen.storyboard */,
-				2585944727BC29300097B70A /* HomeViewController.xib */,
+				2585941727BBF1BC0097B70A /* Main.storyboard */,
 				2585944B27BC2B360097B70A /* RegisterViewController.xib */,
-				2585945727BC54200097B70A /* MainTabViewController.xib */,
+				2585945B27BD96C00097B70A /* MainViewController.xib */,
+				2585944727BC29300097B70A /* HomeViewController.xib */,
+				2585946327BD99C10097B70A /* LikesViewController.xib */,
+				2585946727BD99DC0097B70A /* SearchViewController.xib */,
+				2585946B27BD99F80097B70A /* SettingsViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -293,11 +311,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2585941E27BBF1BD0097B70A /* LaunchScreen.storyboard in Resources */,
+				2585946D27BD99F80097B70A /* SettingsViewController.xib in Resources */,
+				2585945D27BD96C00097B70A /* MainViewController.xib in Resources */,
 				2585944D27BC2B360097B70A /* RegisterViewController.xib in Resources */,
 				2585941B27BBF1BD0097B70A /* Assets.xcassets in Resources */,
-				2585945927BC54200097B70A /* MainTabViewController.xib in Resources */,
 				2585941927BBF1BC0097B70A /* Main.storyboard in Resources */,
 				2585944927BC29300097B70A /* HomeViewController.xib in Resources */,
+				2585946927BD99DC0097B70A /* SearchViewController.xib in Resources */,
+				2585946527BD99C10097B70A /* LikesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,12 +343,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2585945C27BD96C00097B70A /* MainViewController.swift in Sources */,
 				2585941627BBF1BC0097B70A /* LoginViewController.swift in Sources */,
 				2585944C27BC2B360097B70A /* RegisterViewController.swift in Sources */,
+				2585946C27BD99F80097B70A /* SettingsViewController.swift in Sources */,
+				2585946827BD99DC0097B70A /* SearchViewController.swift in Sources */,
 				2585944F27BC31DE0097B70A /* User.swift in Sources */,
+				2585946427BD99C10097B70A /* LikesViewController.swift in Sources */,
 				2585941227BBF1BC0097B70A /* AppDelegate.swift in Sources */,
 				2585941427BBF1BC0097B70A /* SceneDelegate.swift in Sources */,
-				2585945827BC54200097B70A /* MainTabViewController.swift in Sources */,
 				2585944827BC29300097B70A /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
